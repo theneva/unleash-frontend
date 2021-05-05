@@ -2,6 +2,12 @@ interface IAuthStatus {
     authDetails: IAuthDetails;
     showDialog: boolean;
     profile?: IUser;
+    permissions: IPermission[];
+}
+
+interface IPermission {
+    project: string;
+    permission: string;
 }
 
 interface IAuthDetails {
